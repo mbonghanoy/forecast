@@ -23,7 +23,7 @@ class OpenWeatherMapProvider implements WeatherProvider
          * $url is address to be use. query and city name divided by comma.
          * @var [string]
          */
-        $url = sprintf('%s&appid=%s&q=%s', $this->api, $this->key, $city);
+        $url = sprintf('%s?&appid=%s&q=%s', $this->api, $this->key, $city);
         /**
          * get the contents of string and decode will decode
          * @var string

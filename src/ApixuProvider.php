@@ -4,7 +4,7 @@ class ApixuProvider implements WeatherProvider
 {
     protected $key;
 
-    protected $apiProvider = "http://api.apixu.com/v1/current.json";
+    protected $api = "http://api.apixu.com/v1/current.json";
 
     public function __construct($key)
     {
@@ -13,9 +13,9 @@ class ApixuProvider implements WeatherProvider
 
     public function getForecast($city)
     {
-        $url = sprintf('%skey=%s&q=%s', $this->apiProvider, $this->key, $city);
+        $url = sprintf('%s?key=%s&q=%s', $this->api, $this->key, $city);
 
-        $response = json_decode_file(file_get_contents($url));
+        $response = json_decode(file_get_contents($url));
 
         return[
             'city' => $response->location->name,

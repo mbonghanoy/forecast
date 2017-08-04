@@ -6,7 +6,7 @@ class Forecaster
 {
     protected $provider;
 
-    public function __construct(Weather Provider $provider)
+    public function __construct(WeatherProvider $provider)
     {
         $this->provider = $provider;
     }
@@ -19,6 +19,4 @@ class Forecaster
 
 $forecaster = new Forecaster(new ApixuProvider('9c8481c4543dce5886350c41f0835881'));
 
-$forecast = $forecaster->getForecast('Quezon City');
-
-echo "The temperature in {$forecast['city']}";
+var_dump($forecaster->getForecast('Quezon City'));

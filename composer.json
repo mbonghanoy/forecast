@@ -8,5 +8,10 @@
             "email": "bonghanoymark@gmail.com"
         }
     ],
+    "autoload": {
+        "classmap": [
+            "src"
+        ]
+    },
     "require": {}
 }
