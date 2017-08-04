@@ -17,6 +17,6 @@ class Forecaster
     }
 }
 
-$forecaster = new Forecaster(new ApixuProvider('9c8481c4543dce5886350c41f0835881'));
+$forecaster = new Forecaster(new ApixuProvider('fe2e523a3bab437f89191431172505'));
 
 var_dump($forecaster->getForecast('Quezon City'));

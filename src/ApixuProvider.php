@@ -17,11 +17,10 @@ class ApixuProvider implements WeatherProvider
 
         $response = json_decode(file_get_contents($url));
 
-        return[
+        return [
             'city' => $response->location->name,
             'temp_c' => $response->current->temp_c,
             'pressure' => $response->current->pressure_mb,
-            'humidity' => $response->current->pressure_in,
         ];
     }
 }
