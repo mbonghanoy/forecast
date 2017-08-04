@@ -1,0 +1,17 @@
+{
+    "name": "mjohn/forecast",
+    "description": "Weather Forecaster",
+    "type": "library",
+    "authors": [
+        {
+            "name": "mbonghanoy",
+            "email": "bonghanoymark@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src"
+        ]
+    },
+    "require": {}
+}
