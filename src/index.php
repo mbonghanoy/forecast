@@ -19,7 +19,7 @@ class Forecaster
     }
 }
 
-$forecaster = new Forecaster(new ApixuProvider('fe2e523a3bab437f89191431172505'));
+$forecaster = new Forecaster(new ApixuProvider('25bbba1ee9ab4461a77111044170408'));
 
 $forecastResult = $forecaster->getForecast('Cebu');
 
