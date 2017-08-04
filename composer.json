@@ -1,6 +1,6 @@
 {
     "name": "mjohn/forecast",
-    "description": "Weather Forecaster",
+    "description": "Weather forecaster",
     "type": "library",
     "authors": [
         {
@@ -8,6 +8,5 @@
             "email": "bonghanoymark@gmail.com"
         }
     ],
-    },
     "require": {}
 }

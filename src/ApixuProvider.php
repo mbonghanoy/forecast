@@ -8,7 +8,7 @@ class ApixuProvider implements WeatherProvider
 
     public function __construct($key)
     {
-        %this->key = $key;
+        $this->key = $key;
     }
 
     public function getForecast($city)
