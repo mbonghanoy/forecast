@@ -10,7 +10,9 @@ class Forecaster
     {
         $this->provider = $provider;
     }
-
+    /**
+     * @param  string $city [passed location]
+     */
     public function getForecast($city)
     {
         return $this->provider->getForecast($city);
@@ -19,4 +21,6 @@ class Forecaster
 
 $forecaster = new Forecaster(new ApixuProvider('fe2e523a3bab437f89191431172505'));
 
-var_dump($forecaster->getForecast('Quezon City'));
+$forecastResult = $forecaster->getForecast('Cebu');
+
+echo "The Temperature today in {$forecastResult['city']} is {$forecastResult['temp_c']}&degC";

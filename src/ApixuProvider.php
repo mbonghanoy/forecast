@@ -2,6 +2,9 @@
 
 class ApixuProvider implements WeatherProvider
 {
+    /**
+     * @var string
+     */
     protected $key;
 
     protected $api = "http://api.apixu.com/v1/current.json";
@@ -10,7 +13,11 @@ class ApixuProvider implements WeatherProvider
     {
         $this->key = $key;
     }
-
+    /**
+     * will get passed city and return results
+     * @param  string $city [description]
+     * @return array
+     */
     public function getForecast($city)
     {
         $url = sprintf('%s?key=%s&q=%s', $this->api, $this->key, $city);
